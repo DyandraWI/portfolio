@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="footer__left">
             <a href="#home" className="footer__logo" onClick={(e) => { e.preventDefault(); scrollToTop() }}>
               <span className="footer__logo-bracket">&lt;</span>
-              <span className="footer__logo-text">Dev</span>
+              <span className="footer__logo-text">Ndra</span>
               <span className="footer__logo-slash">/</span>
               <span className="footer__logo-bracket">&gt;</span>
             </a>
@@ -25,10 +25,10 @@ export default function Footer() {
           </div>
 
           <div className="footer__links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/DyandraWI" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub size={18} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/dyandra-wahyu-islamy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedinIn size={18} />
             </a>
           </div>

@@ -5,15 +5,15 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa'
 import './Contact.css'
 
 const contactInfo = [
-  { icon: HiMail, label: 'Email', value: 'hello@yourname.dev', href: 'mailto:hello@yourname.dev' },
-  { icon: HiLocationMarker, label: 'Location', value: 'Jakarta, Indonesia', href: null },
-  { icon: HiPhone, label: 'Phone', value: '+62 812 3456 7890', href: 'tel:+6281234567890' },
+  { icon: HiMail, label: 'Email', value: 'dyandra.islamy96@gmail.com', href: 'mailto:dyandra.islamy96@gmail.com' },
+  { icon: HiLocationMarker, label: 'Location', value: 'Bekasi, Indonesia', href: null },
+  { icon: HiPhone, label: 'Phone', value: '+62 821 3456 1960', href: 'tel:+6281234567890' },
 ]
 
 const socials = [
-  { icon: FaGithub, label: 'GitHub', href: 'https://github.com', color: '#ffffff' },
-  { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://linkedin.com', color: '#0A66C2' },
-  { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com', color: '#E4405F' },
+  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/DyandraWI', color: '#ffffff' },
+  { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://www.linkedin.com/in/dyandra-wahyu-islamy/', color: '#0A66C2' },
+  { icon: FaInstagram, label: 'Instagram', href: 'https://www.instagram.com/dyndraisla/', color: '#E4405F' },
 ]
 
 export default function Contact() {
@@ -28,7 +28,10 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Thanks for your message! (This is a demo)')
+    const { name, email, subject, message } = formState
+    const body = `Hi Dyandra,\n\nName: ${name}\nEmail: ${email}\n\n${message}`
+    const mailtoLink = `mailto:dyandra.islamy96@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.open(mailtoLink, '_blank')
     setFormState({ name: '', email: '', subject: '', message: '' })
   }
 

@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="navbar__inner container">
         <a href="#home" className="navbar__logo" onClick={(e) => handleNavClick(e, '#home')}>
           <span className="navbar__logo-bracket">&lt;</span>
-          <span className="navbar__logo-text">Dev</span>
+          <span className="navbar__logo-text">Ndra</span>
           <span className="navbar__logo-slash">/</span>
           <span className="navbar__logo-bracket">&gt;</span>
         </a>
